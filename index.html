@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vagent-call-vagent</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Vapi Web Widget Script -->
+    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+    
+    <!-- Vapi Widget Element -->
+    <vapi-widget
+      public-key="be5b5632-e3fa-4791-ace9-79208ad86e1f"
+      assistant-id="649fbc91-2220-4e65-ab97-de0233a21cec"
+      mode="voice"
+      theme="light"
+      position="bottom-right"
+      size="compact"
+      title="Talk with our agent"
+      start-button-text="Start call"
+      end-button-text="End call"
+      voice-empty-message="Click to start a voice conversation"
+      voice-show-transcript="true"
+    ></vapi-widget>
+  </body>
+</html>
